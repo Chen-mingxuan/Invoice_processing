@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>发票处理系统</title>
+</head>
+<body>
+    <h1>发票处理系统</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="上传文件">
+    </form>
+    <form action="/process" method="post">
+        <input type="text" name="filename" placeholder="请输入要处理的文件名">
+        <input type="submit" value="处理文件">
+    </form>
+</body>
+</html>
